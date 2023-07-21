@@ -37,10 +37,6 @@
   cursor: pointer;
 }
 
-#burguer {
-  display: none;
-}
-
 @media (max-width: 600px) {
   #logo-img {
     width: 100%;
