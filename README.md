@@ -4,7 +4,6 @@
 Esse projeto é uma SPA (Single Page Application) de um site de contabilidade.
 Utilizo aqui as seguintes tecnologias: React, Vite, CSS e HTML. Como linter, utilizei o Eslint.
 
-
 ## Como rodar esse projeto no seu VSCode
 
 Para usar esse projeto no seu VSCode, basta seguir esse passos:
