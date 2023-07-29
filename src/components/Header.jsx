@@ -1,52 +1,36 @@
-import {  useRef } from 'react';
 import logo from '../assets/UNITY.png';
-import menu from '../assets/main-menu.png';
 import '../styles/Header.css';
 
 function Header() {
-  // const [botao, setBotao] = useState(false);
-  const navRef = useRef();
-
-  const handleClick = () => {
-    navRef.current.classList.toggle('active');
-  }
+  const mobileMenu = () => {
+    const navBar = document.querySelector('.nav');
+    navBar.classList.toggle('active');
+  };
 
   return (
-    <div>
-      <div className="header-container">
-        <div id="logo">
-          <img src={logo} id="logo-img" alt="unity-contabilidade" />
-        </div>
-        <img
-          src={menu}
-          id="burguer"
-          alt="menu-hamburguer"
-          onClick={ () => handleClick() }
-        />
-        <nav id="links">
-          <a className="link" href="#">
-            SOBRE
-          </a>
-          <a className="link" href="#">
-            ORÇAMENTOS
-          </a>
-          <a className="link" href="#">
-            CONTATO
-          </a>
-        </nav>
-      </div>
-      <nav ref={navRef} id="links2">
-        <a className="link2" href="#">
-          SOBRE
-        </a>
-        <a className="link2" href="#">
-          ORÇAMENTOS
-        </a>
-        <a className="link2" href="#">
-          CONTATO
-        </a>
+    <header className="header">
+      <img src={logo} id="logo" alt="unity-contabilidade" />
+      <nav className="nav">
+        <span id="hamburguer" onClick={() => mobileMenu()}></span>
+        <ul className="menu">
+          <li>
+            <a className="link" href="#">
+              SOBRE
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#">
+              ORÇAMENTOS
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#">
+              CONTATO
+            </a>
+          </li>
+        </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 
