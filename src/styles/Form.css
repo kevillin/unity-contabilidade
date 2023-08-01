@@ -1,0 +1,30 @@
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 30%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-form-main {
+  background-color: #ACACAC;
+  width: 100%;
+}
+
+.input-form-main {
+  width: 80%;
+  height: 30%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.button-form-main {
+  background-color: #B99000;
+  color: #FFFFFF;
+  width: 100%;
+  border: none;
+  height: 100px;
+}
